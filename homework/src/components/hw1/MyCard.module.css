@@ -1,0 +1,60 @@
+.my_card{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notebook {
+    width: 370px;
+    height: 500px;
+    background-color: #B3E58B;
+    /*  B3E58B A3CE82 */
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 20px 20px 5px;
+    font-family: 'Arial';
+    padding: 40px;
+    box-sizing: border-box;
+    margin-right: 100px;
+}
+.notebook h2 {
+    margin: 0;
+    /* font-family: 'Open Sans'; */
+    font-weight: lighter;
+    letter-spacing: 3.5px;
+    background-image: none;
+}
+span {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: #429C87;
+
+}
+p {
+    /* text-decoration: underline; */
+    background-image: linear-gradient(to right, #000000 0%, #000000 100%);
+   background-repeat: repeat-x; 
+   background-position: 0 100%; 
+   background-size: 100% 1.5px;
+   font-size: 18px;
+   padding-left: 15px;
+}
+p+p+p+p {
+    text-align: center;
+}
+button {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: #000000;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: 3px solid rgba(244, 244, 60, 0.892);;
+    border-radius: 10px;
+    
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: rgba(241, 187, 39, 0.892);
+}
