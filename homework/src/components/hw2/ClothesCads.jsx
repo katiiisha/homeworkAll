@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 import s from './ClothesCads.module.css'
+// Задание:
+//Создайте компонент карточки для страницы с ценами, она должна принимать
+//тип, цену, текст для кнопки и children с описанием.
+
 function ClothesCads() {
     const clothes = [
         { id: 0, type: 'T-shirt', price: '1000', content: 'lorem lorem lorem', text: 'buy' },

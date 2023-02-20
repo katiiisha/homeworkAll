@@ -46,3 +46,9 @@ button {
   right: 0px;
   left: 123px;
 }
+/* .link:visited + .badge {
+ visibility: hidden;
+} */
+.active > .badge {
+ visibility: hidden; 
+}

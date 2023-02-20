@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Feature from './Feature';
-import s from './InputForm.module.css'
+import s from './h3styles.module.css'
 import Sanchello from './Sanchello';
 import Toggle from './Toggle';
+//Задание:
+//Сделать форму, в которой будет два поля с именем и фамилией
+//при отправке формы, на экран выводится сообщение с текстом
+//«Имя Фамилия»
 
 function InputForm() {
   

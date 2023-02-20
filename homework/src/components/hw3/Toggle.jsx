@@ -1,6 +1,10 @@
 import React from 'react'
+import s from './h3styles.module.css'
+// Задание:
+//    Написать компонент который меняет выравнивание текста (text-align) 
+//    у элемента h2. По клику на кнопку Toggle, меняется выравнивание: 
+//    сначала по левому краю, потом по центру, потом по правому краю.
 
-import s from './InputForm.module.css'
 function Toggle() {
     const [text, setText] = React.useState('center')
     function chahgeAling(){

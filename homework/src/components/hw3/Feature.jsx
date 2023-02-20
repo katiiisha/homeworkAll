@@ -1,7 +1,11 @@
 import React from 'react'
 import image from './image.jpg'
-import s from './InputForm.module.css'
+import s from './h3styles.module.css'
 import { Row } from 'react-bootstrap'
+//Создайте компонент Feature, он принимает заголовок, подзаголовок,
+//описание, картинку и расположение. Картинка может располагаться либо
+//слева, либо справа. То есть нужно менять колонки местами.
+
 function Feature() {
     const [places, setPlaces] = React.useState('col-md-7');
     function  swapPlaces() {

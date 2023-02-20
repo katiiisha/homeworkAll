@@ -1,5 +1,5 @@
-import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
+import  './App.css';
+import { Routes, Route, Link, NavLink} from "react-router-dom";
 import MyCard from './components/hw1/MyCard';
 import ClothesCads from './components/hw2/ClothesCads'; 
 import { Badge } from 'react-bootstrap'
@@ -7,6 +7,11 @@ import InputForm from './components/hw3/InputForm';
 
 
 function App() {
+// Задание:
+//    Написать компонент бейдж, который оборачивает содержимое собой
+//    Принимает типы (primary, secondary, success, danger, warning, info...)
+//    По умолчанию тип secondary. В зависимости от типа будет нужный класс, например
+//    badge-light, badge-secondary, badge-success и тд
   const badge = [
     {  classes: 'hw1', text: 'work 1', link: 'MyCard', type: 'success',  },
     { classes: 'hw2', text: 'work 2', link: 'ClothesCads', type: 'warning', },
@@ -19,8 +24,10 @@ function App() {
         {badge.map((elem) => (
           <>
             <button className={elem.classes}>
-              <Link to={elem.link}> {elem.text}</Link>
-              <Badge className='badge' bg={elem.type}>new</Badge>
+              <NavLink to={elem.link}>
+                {elem.text}
+                <Badge className='badge' bg={elem.type}>new</Badge>
+              </NavLink>
             </button>
             
           </>

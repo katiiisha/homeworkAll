@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import s from './MyCard.module.css'
+// Сделайте форму которая будет выводить данные о себе
 function MyCard() {
     const card = {
         id: 0,
